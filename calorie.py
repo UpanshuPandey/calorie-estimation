@@ -37,7 +37,7 @@ def getVolume(label, area, skin_area, pix_to_cm_multiplier, fruit_contour):
 	return volume
 
 def calories(result,img):
-    img_path =img # "C:/Users/M Sc-2/Desktop/dataset/FooD/"+str(j)+"_"+str(i)+".jpg"
+    img_path =img # "C:/Users/Sudatta/Desktop/dataset/FooD/"+str(j)+"_"+str(i)+".jpg"
     fruit_areas,final_f,areaod,skin_areas, fruit_contours, pix_cm = getAreaOfFood(img_path)
     volume = getVolume(result, fruit_areas, skin_areas, pix_cm, fruit_contours)
     mass, cal, cal_100 = getCalorie(result, volume)
@@ -50,6 +50,6 @@ def calories(result,img):
 
 if __name__ == '__main__':
     
-    a=r'C:\Users\M Sc-2\Desktop\data\sa\data1.jpg'
+    a=r'C:\Users\sudatta\Desktop\data\sa\data1.jpg'
     a=cv2.imread(a)
     print(testing(1,a))
