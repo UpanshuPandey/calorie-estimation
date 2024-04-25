@@ -27,6 +27,6 @@ cal=round(calories(result+1,img),2)
 
 import matplotlib.pyplot as plt
 plt.imshow(img)
-plt.title('{}({}kcal)'.format(name,cal))
+plt.title('{}({}cal)'.format(name,cal))
 plt.axis('off')
 plt.show()
